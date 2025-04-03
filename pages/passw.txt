@@ -312,18 +312,19 @@ document.oncontextmenu = new Function('alert("~/ Siam Was Here /~"); return fals
     <div class="wrapper">
         <!-- Centered Logo -->
         <div class="logo-container">
-            <img src="logo.png" alt="Logo" id="logo">
+            <img src="https://siams-technology.github.io/samam/pages/in-a-dramatic-illustration-with-a-dark-a_fDy-A6zbTjStYmxFa8cQGg_oumgpc5AR4iI67QLkYvaVw-removebg-preview.png" alt="Logo" id="logo">
         </div>
         
         <!-- Text Section (will be animated by TextScramble) -->
-        <div class="text-container">
-            <p id="tagline">G0T S3CUR1TY?</p>
+        <div class="text-container>
+        <p id="tagline">G0T S3CUR1TY?</p>
             <div class="text">Hacked by Siam</div><br>
+            
         </div>
 
         <!-- Footer Section -->
         <div id="footer" class="animated bounceIn">
-            <h1 id="greyshadow">Hacked3D</h1>
+            <h1 id="greyshadow">Hey dear Gonvernment, if you don't bring PayPal services to Bangladesh, I'll hack the site.</h1>
         </div>
 
         <br />
@@ -502,3 +503,4 @@ document.oncontextmenu = new Function('alert("~/ Siam Was Here /~"); return fals
     </style>
 </body>
 </html>
+
