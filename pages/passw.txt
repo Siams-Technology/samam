@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
 <head>
-    <title>//:~Hacked By Siam~://</title>
+    <title>//:~Hacked by Siam~://</title>
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0">
 		<meta name="Author"       content="Siam">
@@ -234,7 +234,7 @@ color: white;
 var rev = "silent";
 function titlebar(val)
 {
-    var msg  = "Hacked By Siam";
+    var msg  = "Hacked by Siam";
     var res = " ";
     var speed = 70
     var pos = val;
