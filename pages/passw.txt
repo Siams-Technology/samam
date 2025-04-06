@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html oncontextmenu="return false;" onkeypress="return false;" onkeydown="return false;" onkeyup="return false;">
 <head>
-    <title>//:~Hacked by Siam~://</title>
+    <title>//:~Welcome~://</title>
     <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0">
 		<meta name="Author"       content="Siam">
 		<meta name="keywords" content="Siam, GS, Hacked, Touched, Leaked, Pawned, Deface, Website Deface, Defacement" />
         <meta name="copyright"    content="Silent"/>
 		<meta name="description"  content="Silence is the most Powerful Scream"/>
-		<meta property="og:title" content="Hacked by Siam"/>
+		<meta property="og:title" content="Welcome"/>
 	  	<meta property="og:image" content="https://i.postimg.cc/ZYGd2jVg/filtechhackerslogo.jpg">
 	  	<link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/4t6070S/gs.png">
 	
@@ -234,7 +234,7 @@ color: white;
 var rev = "silent";
 function titlebar(val)
 {
-    var msg  = "Hacked by Siam";
+    var msg  = "Welcome";
     var res = " ";
     var speed = 70
     var pos = val;
@@ -317,14 +317,14 @@ document.oncontextmenu = new Function('alert("~/ Siam Was Here /~"); return fals
         
         <!-- Text Section (will be animated by TextScramble) -->
         <div class="text-container>
-        <p id="tagline">G0T S3CUR1TY?</p>
-            <div class="text">Hacked by Siam</div><br>
+        <p id="tagline">Welcome to</p>
+            <div class="text">Welcome</div><br>
             
         </div>
 
         <!-- Footer Section -->
         <div id="footer" class="animated bounceIn">
-            <h1 id="greyshadow">Hey dear Gonvernment, if you don't bring PayPal services to Bangladesh, I'll hack the site.</h1>
+            <h1 id="greyshadow">hey there fellow people welcome to our web page</h1>
         </div>
 
         <br />
@@ -390,8 +390,8 @@ document.oncontextmenu = new Function('alert("~/ Siam Was Here /~"); return fals
         }
 
         const phrases = [
-            'Hacked by Siam',
-            'Hacked by Siam',
+            'Welcome',
+            'Welcome',
         ]
 
         const el = document.querySelector('.text')
