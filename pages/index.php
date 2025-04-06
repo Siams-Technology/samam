@@ -1,24 +1,46 @@
 <?php
-// You can add PHP functionality here
-$pageTitle = "Hacked bt Siam";
-$footerText = "Hey there government ,we hacked the site because you dont bring Paypal servises in BD";
+// Dynamic PHP Variables
+$pageTitle = "Hacked by Siam | Silent Hackers";
+$footerText = "Hey there, government! We hacked this site because you don't bring PayPal services to Bangladesh.";
+$metaDescription = "This is a defacement page by Siam. Silence is the most powerful scream.";
+$metaKeywords = "cbsg, cbsg hacking, cbsg cybersecurity, cbsg related tools, cbsg vulnerabilities, cbsg research, cbsg attacks, cbsg hacking techniques, cbsg security breaches, cbsg defense, cbsg threat analysis, cbsg penetration testing, cbsg exploitation, cbsg digital forensics, cbsg malware, cbsg cyber risks, cbsg prevention, cbsg mitigation, cbsg network security, cbsg data protection, cbsg encryption, cbsg security best practices, cbsg threat intelligence, cbsg risk management, cbsg breach prevention, cbsg protection, cbsg cybersecurity solutions, cbsg experts, cbsg advisory, cbsg monitoring, cbsg advanced threats, cbsg security software, cbsg firewalls, cbsg authentication, cbsg encryption techniques, cbsg ethical hacking, cbsg hacking methods, cbsg incident response, cbsg forensic analysis, cbsg tools, cbsg hacking tutorials, cbsg cybersecurity news, cbsg research papers, cbsg attacks and defense, cbsg attack vectors, cbsg data leaks, cbsg exploit development, cbsg cybersecurity audits, cbsg exploitation techniques, cbsg risk assessment, cbsg vulnerability scanning, cbsg penetration tools, cbsg security training, cbsg updates, cbsg security measures, cbsg digital threats, cbsg advanced cybersecurity.";
+$ogImage = "https://siams-technology.github.io/samam/pages/in-a-dramatic-illustration-with-a-dark-a_fDy-A6zbTjStYmxFa8cQGg_oumgpc5AR4iI67QLkYvaVw-removebg-preview.png";
+$author = "Siam Mahmud";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, user-scalable=0">
-    <meta name="Author" content="Siam">
-    <meta name="copyright" content="Silent"/>
-    <meta name="description" content="Silence is the most Powerful Scream"/>
-    <meta property="og:title" content="Hacked by Siam"/>
-    <meta property="og:image" content="https://i.postimg.cc/ZYGd2jVg/filtechhackerslogo.jpg">
-    <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/4t6070S/gs.png">
+    <meta name="description" content="<?php echo $metaDescription; ?>">
+    <meta name="keywords" content="<?php echo $metaKeywords; ?>">
+    <meta name="author" content="<?php echo $author; ?>">
 
-    <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+    <!-- Open Graph (for Facebook & social sharing) -->
+    <meta property="og:title" content="<?php echo $pageTitle; ?>">
+    <meta property="og:description" content="<?php echo $metaDescription; ?>">
+    <meta property="og:image" content="<?php echo $ogImage; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
+    <meta name="twitter:description" content="<?php echo $metaDescription; ?>">
+    <meta name="twitter:image" content="<?php echo $ogImage; ?>">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.ibb.co/4t6070S/gs.png">
+
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css"/>
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
     <style>
         html, body {        	
             width: 100%;
