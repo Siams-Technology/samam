@@ -12,7 +12,7 @@ $footerText = "Hey there government ,we hacked the site because you dont bring P
     <meta name="Author" content="Siam">
     <meta name="copyright" content="Silent"/>
     <meta name="description" content="Silence is the most Powerful Scream"/>
-    <meta property="og:title" content="Welcome"/>
+    <meta property="og:title" content="Hacked by Siam"/>
     <meta property="og:image" content="https://i.postimg.cc/ZYGd2jVg/filtechhackerslogo.jpg">
     <link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/4t6070S/gs.png">
 
@@ -158,6 +158,15 @@ $footerText = "Hey there government ,we hacked the site because you dont bring P
             text-decoration: none;
             display: block;
         }
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        #logo {
+            width: 200px;
+            height: auto;
+        }
+
         
         #pages:hover {
             background: transparent;
@@ -309,7 +318,7 @@ $footerText = "Hey there government ,we hacked the site because you dont bring P
         // Initialize text scramble effect
         document.addEventListener('DOMContentLoaded', function() {
             const phrases = [
-                'Welcome',
+                'Hacked by Siam',
                 '<?php echo $pageTitle; ?>'
             ]
 
