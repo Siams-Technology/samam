@@ -3,7 +3,7 @@
     <div class="wrapper">
         <!-- Centered Logo -->
         <div class="logo-container">
-            <img src="https://siams-technology.github.io/samam/pages/in-a-dramatic-illustration-with-a-dark-a_fDy-A6zbTjStYmxFa8cQGg_oumgpc5AR4iI67QLkYvaVw-removebg-preview.png" alt="Logo" id="logo">
+            <img src="https://mr3xploiter.github.io/samam/pages/in-a-dramatic-illustration-with-a-dark-a_fDy-A6zbTjStYmxFa8cQGg_oumgpc5AR4iI67QLkYvaVw-removebg-preview.png" alt="Logo" id="logo">
         </div>
         
         <!-- Text Section (will be animated by TextScramble) -->
