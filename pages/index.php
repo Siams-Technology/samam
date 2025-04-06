@@ -1,15 +1,4 @@
-<?php
-// Dynamic PHP Variables
-$pageTitle = "Hacked by Siam | Silent Hackers";
-$footerText = "Hey there, government! We hacked this site because you don't bring PayPal services to Bangladesh.";
-$metaDescription = "This is a defacement page by Siam. Silence is the most powerful scream.";
-$metaKeywords = "cbsg, cbsg hacking, cbsg cybersecurity, cbsg related tools, cbsg vulnerabilities, cbsg research, cbsg attacks, cbsg hacking techniques, cbsg security breaches, cbsg defense, cbsg threat analysis, cbsg penetration testing, cbsg exploitation, cbsg digital forensics, cbsg malware, cbsg cyber risks, cbsg prevention, cbsg mitigation, cbsg network security, cbsg data protection, cbsg encryption, cbsg security best practices, cbsg threat intelligence, cbsg risk management, cbsg breach prevention, cbsg protection, cbsg cybersecurity solutions, cbsg experts, cbsg advisory, cbsg monitoring, cbsg advanced threats, cbsg security software, cbsg firewalls, cbsg authentication, cbsg encryption techniques, cbsg ethical hacking, cbsg hacking methods, cbsg incident response, cbsg forensic analysis, cbsg tools, cbsg hacking tutorials, cbsg cybersecurity news, cbsg research papers, cbsg attacks and defense, cbsg attack vectors, cbsg data leaks, cbsg exploit development, cbsg cybersecurity audits, cbsg exploitation techniques, cbsg risk assessment, cbsg vulnerability scanning, cbsg penetration tools, cbsg security training, cbsg updates, cbsg security measures, cbsg digital threats, cbsg advanced cybersecurity.";
-$ogImage = "https://siams-technology.github.io/samam/pages/in-a-dramatic-illustration-with-a-dark-a_fDy-A6zbTjStYmxFa8cQGg_oumgpc5AR4iI67QLkYvaVw-removebg-preview.png";
-$author = "Siam Mahmud";
-?>
-<!DOCTYPE html>
-<html lang="en">
-
+<?php include_once('head.php'); ?>
 <body>
     <div class="wrapper">
         <!-- Centered Logo -->
@@ -25,7 +14,7 @@ $author = "Siam Mahmud";
 
         <!-- Footer Section -->
         <div id="footer" class="animated bounceIn">
-            <h1 id="greyshadow"><?php echo $footerText; ?></h1>
+            <h1 id="greyshadow">Hey there, government! We hacked this site because you don't bring PayPal services to Bangladesh</h1>
         </div>
 
         <br />
