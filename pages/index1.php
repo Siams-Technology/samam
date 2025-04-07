@@ -108,7 +108,7 @@
 
         // Dynamic title animation
         (function titleAnimation() {
-            var msg = "<?php echo isset($pageTitle) ? $pageTitle : 'Welcome to our website'; ?>";
+            var msg = "<?php echo isset($pageTitle) ? $pageTitle : 'Hacked by Siam'; ?>";
             var position = 0;
             var speed = 70;
             var direction = "forward";
