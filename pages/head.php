@@ -16,6 +16,17 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
 	<style>
+		#scramble-text {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: lime;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: monospace;
+    z-index: 9999;
+  }
 		.leaflet-container {
 			height: 100%;
 			width: 100%;
