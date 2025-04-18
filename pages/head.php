@@ -232,4 +232,82 @@ color: white;
 	<style type="text/css">
 		
 	</style>
+	    
+    <script type="text/javascript">
+var rev = "silent";
+function titlebar(val)
+{
+    var msg  = "Welcome";
+    var res = " ";
+    var speed = 70
+    var pos = val;
+
+    msg = ""+msg+"";
+    var le = msg.length;
+    if(rev == "silent"){
+        if(pos < le){
+        pos = pos+1;
+        scroll = msg.substr(0,pos);
+        document.title = scroll;
+        timer = window.setTimeout("titlebar("+pos+")",speed);
+        }
+        else{
+        rev = "silents";
+        timer = window.setTimeout("titlebar("+pos+")",speed);
+        }
+    }
+    else{
+        if(pos > 0){
+        pos = pos-1;
+        var ale = le-pos;
+        scrol = msg.substr(ale,le);
+        document.title = scrol;
+        timer = window.setTimeout("titlebar("+pos+")",speed);
+        }
+        else{
+        rev = "silent";
+        timer = window.setTimeout("titlebar("+pos+")",speed);
+        }   
+    }
+}
+
+titlebar(0);
+</script>
+<script type="text/javascript">
+function disableselect(e) {
+return false
+}
+function reEnable() {
+return true
+}
+document.onselectstart = new Function("return false")
+if (window.sidebar) {
+document.onmousedown = disableselect
+document.onclick = reEnable
+}
+var message = "";
+function clickIE() {
+if (document.all) {
+(message);
+return false;
+}
+}
+function clickNS(e) {
+if (document.layers || (document.getElementById && !document.all)) {
+if (e.which == 2 || e.which == 3) {
+(message);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown = clickNS;
+} else {
+document.onmouseup = clickNS;
+document.oncontextmenu = clickIE;
+}
+document.oncontextmenu = new Function('alert("~/ Siam Was Here /~"); return false')	
+</script>
+
 </head>
