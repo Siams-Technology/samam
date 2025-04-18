@@ -7,21 +7,22 @@
         </div>
         
         <!-- Text Section (will be animated by TextScramble) -->
-        <div class="text-container">
-            <p id="tagline">GOT S3CURITY?</p>
-            <div class="text" id="scramble-text">Hacked by Siam</div><br>
+        <div class="text-container>
+        <p id="tagline">Welcome to</p>
+            <div class="text">Welcome</div><br>
+            
         </div>
 
         <!-- Footer Section -->
         <div id="footer" class="animated bounceIn">
-            <h1 id="greyshadow">Hey there, government! We hacked this site because you don't bring PayPal services to Bangladesh</h1>
+            <h1 id="greyshadow">hey there fellow people welcome to our web page</h1>
         </div>
 
         <br />
     </div>
 
+    <noscript><meta http-equiv="refresh" content="0; URL=https://Siam.com/"></noscript>
     <script type="text/javascript">
-        // Text scramble animation
         class TextScramble {
             constructor(el) {
                 this.el = el
@@ -79,62 +80,116 @@
             }
         }
 
-        // Initialize text scramble effect
-        document.addEventListener('DOMContentLoaded', function() {
-            const phrases = [
-                'Hacked by Siam',
-                '<?php echo $pageTitle; ?>'
-            ]
+        const phrases = [
+            'Welcome',
+            'Welcome',
+        ]
 
-            const el = document.getElementById('scramble-text')
-            if (el) {
-                const fx = new TextScramble(el)
+        const el = document.querySelector('.text')
+        const fx = new TextScramble(el)
 
-                let counter = 0
-                const next = () => {
-                    fx.setText(phrases[counter]).then(() => {
-                        setTimeout(next, 3500)
-                    })
-                    counter = (counter + 1) % phrases.length
-                }
+        let counter = 0
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 3500)
+            })
+            counter = (counter + 1) % phrases.length
+        }
 
-                next()
-            }
-        });
+        next()
 
-        // Dynamic title animation
-        (function titleAnimation() {
-            var msg = "<?php echo $pageTitle; ?>";
-            var position = 0;
-            var speed = 70;
-            var direction = "forward";
-            
-            function updateTitle() {
-                if (direction === "forward") {
-                    if (position < msg.length) {
-                        position++;
-                        var scroll = msg.substr(0, position);
-                        document.title = scroll;
-                        setTimeout(updateTitle, speed);
-                    } else {
-                        direction = "backward";
-                        setTimeout(updateTitle, speed);
-                    }
-                } else {
-                    if (position > 0) {
-                        position--;
-                        var scroll = msg.substr(msg.length - position, msg.length);
-                        document.title = scroll;
-                        setTimeout(updateTitle, speed);
-                    } else {
-                        direction = "forward";
-                        setTimeout(updateTitle, speed);
-                    }
-                }
-            }
-            
-            updateTitle();
-        })();
+        'use strict';
+
+        var app = {
+            chars: [''],
+
+            init: function () {
+                app.container = document.createElement('div');
+                app.container.className = 'animation-container';
+                document.body.appendChild(app.container);
+                window.setInterval(app.add, 100);
+            },
+
+            add: function () {
+                var element = document.createElement('span');
+                app.container.appendChild(element);
+                app.animate(element);
+            },
+
+            animate: function (element) {
+                var character = app.chars[Math.floor(Math.random() * app.chars.length)];
+                var duration = Math.floor(Math.random() * 15) + 1;
+                var offset = Math.floor(Math.random() * (50 - duration * 2)) + 3;
+                var size = 10 + (15 - duration);
+                element.style.cssText = 'right:' + offset + 'vw; font-size:' + size + 'px; animation-duration:' + duration + 's';
+                element.innerHTML = character;
+                window.setTimeout(app.remove, duration * 100, element);
+            },
+
+            remove: function (element) {
+                element.parentNode.removeChild(element);
+            },
+
+        };
+
+        document.addEventListener('DOMContentLoaded', app.init);
     </script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        #logo {
+            width: 200px;
+            height: auto;
+        }
+
+        .text-container {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .text {
+            color: #FF5733;
+        }
+
+        #footer {
+            margin-top: 20px;
+        }
+
+        #greyshadow {
+            text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .animation-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .silent {
+            visibility: hidden;
+        }
+    </style>
 </body>
-</html>
